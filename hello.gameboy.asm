@@ -49,7 +49,7 @@ Start:
 
     ld      hl, text
     ld      de, _SCRN0+$100     ; Center it a bit
-    ld      c, text_end-text    ; b = 0, our string = 18 chars
+    ld      c, text_end-text    ; b = 0, our string = 12 chars
     call    Copy                ; LCDC is disabled so we have easy access to VRAM
 
     ld      a, LCDCF_ON | LCDCF_BG8000 | LCDCF_BG9800 | LCDCF_OBJ8 | LCDCF_OBJOFF | LCDCF_WINOFF | LCDCF_BGON
